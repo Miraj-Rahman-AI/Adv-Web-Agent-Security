@@ -9,7 +9,6 @@
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Status](https://img.shields.io/badge/Status-Research%20%26%20Development-orange)](#development-roadmap)
 
----
 
 ## Overview
 
@@ -40,7 +39,6 @@ The projects share a common research direction while remaining independently org
 | 9 | AgentSentinel | Runtime monitoring and anomaly detection |
 | 10 | AgentFirewall | Prompt-injection screening and instruction-conflict analysis |
 
----
 
 ## Table of Contents
 
@@ -71,7 +69,6 @@ The projects share a common research direction while remaining independently org
 - [Research and Publications](#research-and-publications)
 - [License](#license)
 
----
 
 # Research Motivation
 
@@ -105,7 +102,6 @@ The projects are organized around six principles:
 
 No individual mechanism is assumed to provide complete protection against every form of prompt injection.
 
----
 
 # Project Collection
 
@@ -140,7 +136,6 @@ ActionShield should reject the purchase if it falls outside the user's authoriza
 
 Investigate whether runtime action enforcement reduces unauthorized actions while preserving legitimate task completion.
 
----
 
 ## 2. WebGuardBench
 
@@ -171,7 +166,6 @@ Investigate how security effectiveness varies across agents, tasks, attack condi
 
 A benchmark should define its task distribution, threat model, success criteria, and evaluation procedure explicitly.
 
----
 
 ## 3. GoalGuard
 
@@ -203,7 +197,6 @@ GoalGuard should identify that making a reservation is outside the requested com
 
 Investigate whether goal-conditioned verification can identify unauthorized actions more effectively than prompt-level filtering alone.
 
----
 
 ## 4. LeakGuard
 
@@ -233,7 +226,6 @@ LeakGuard should prevent the unauthorized transfer while preserving operations p
 
 Investigate whether data-flow controls reduce unauthorized disclosure without unnecessarily restricting legitimate information-sharing tasks.
 
----
 
 ## 5. SafeClick
 
@@ -261,7 +253,6 @@ An agent may browse websites and compare products automatically but require conf
 
 Investigate how risk-aware approval mechanisms reduce unauthorized actions while minimizing unnecessary interruptions and task delays.
 
----
 
 ## 6. MemoryShield
 
@@ -291,7 +282,6 @@ MemoryShield should prevent untrusted webpage content from becoming an authorita
 
 Investigate whether provenance-aware memory controls reduce persistent prompt-injection risks without preventing useful information retention.
 
----
 
 ## 7. RedBlue Lab
 
@@ -323,7 +313,6 @@ Investigate which conditions expose weaknesses in existing defenses and whether 
 
 All experiments should use authorized, controlled environments.
 
----
 
 ## 8. WebPermit
 
@@ -353,7 +342,6 @@ WebPermit should reject operations outside the granted permission scope.
 
 Investigate how least-privilege controls limit the impact of prompt injection, including cases where the model proposes an unauthorized action.
 
----
 
 ## 9. AgentSentinel
 
@@ -388,7 +376,6 @@ Investigate whether trajectory-aware monitoring can detect security-relevant beh
 
 Detection quality should be evaluated against labeled benign and adversarial trajectories, including false-positive rates.
 
----
 
 ## 10. AgentFirewall
 
@@ -423,7 +410,6 @@ Investigate how instruction-conflict analysis contributes to prompt-injection re
 
 AgentFirewall should not assume that every direct user instruction is malicious. Its analysis must be grounded in the authorized task, applicable instruction hierarchy, and explicit security policies.
 
----
 
 # Overall Architecture
 
@@ -512,7 +498,6 @@ This architecture is a design proposal. Actual enforcement guarantees depend on 
 - **Auditability:** Preserve relevant decisions and execution outcomes.
 - **Measurable effectiveness:** Evaluate security, utility, false positives, and runtime overhead.
 
----
 
 # Research Questions
 
@@ -532,8 +517,6 @@ The repository supports the following research directions.
 These are research questions, not claims that the repository has already answered them.
 
 Individual research papers should focus on a well-defined problem, a defensible research gap, an explicit threat model, and experimentally supported contributions.
-
----
 
 # Threat Model
 
@@ -587,7 +570,6 @@ The initial prototype does not claim to defend against:
 
 A successful evaluation within the stated threat model does not establish universal protection against prompt injection.
 
----
 
 # Evaluation Framework
 
@@ -632,7 +614,6 @@ Results should include appropriate sample counts, uncertainty estimates, and lim
 
 No performance improvement should be claimed until the corresponding experiments have been completed.
 
----
 
 # Technology Stack
 
@@ -653,7 +634,6 @@ The initial development stack is expected to include:
 
 Final dependencies and supported versions will be documented as implementations become available.
 
----
 
 # Repository Structure
 
@@ -713,7 +693,6 @@ advanced-web-agent-security/
 
 This structure is a starting point. Directories and shared utilities should be introduced incrementally as the corresponding implementations are developed.
 
----
 
 # Getting Started
 
@@ -787,7 +766,6 @@ These commands describe the intended development workflow. They do not imply tha
 
 Project-specific installation instructions should be added to the README inside each project directory as its implementation becomes available.
 
----
 
 # Development Roadmap
 
@@ -844,7 +822,6 @@ Project-specific installation instructions should be added to the README inside 
 
 Progress should be tracked for each project independently. Features should be marked complete only after implementation and relevant testing.
 
----
 
 # Security and Responsible Use
 
@@ -861,7 +838,6 @@ This repository is intended for authorized security research, defensive engineer
 
 The effectiveness of a security mechanism depends on its implementation, policy correctness, threat model, and evaluation coverage.
 
----
 
 # Reproducibility
 
@@ -882,7 +858,6 @@ Experiment configurations should be version-controlled so that results can be re
 
 Credentials, secrets, and private user information must not be included in published artifacts.
 
----
 
 # Contributing
 
@@ -903,7 +878,6 @@ Before contributing a new project, document its security problem, threat model, 
 
 Contributions should follow the repository's coding, testing, and documentation practices as they are introduced.
 
----
 
 # Research and Publications
 
@@ -925,7 +899,6 @@ Publications, technical reports, and validated implementations will be linked he
 
 Research novelty should be established through a review of relevant prior work and supported by experimental evidence.
 
----
 
 # License
 
@@ -933,17 +906,6 @@ This project is licensed under the **MIT License**.
 
 Copyright (c) 2026 Advanced Web Agent Security contributors
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files, to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
-
-See the [`LICENSE`](LICENSE) file for the complete license terms.
-
-Third-party models, datasets, benchmark environments, and dependencies may have separate license terms. Those terms must also be respected.
-
----
 
 # Vision
 
