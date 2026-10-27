@@ -1,0 +1,10 @@
+agent: scripted
+backend: browser
+defenses:
+  - name: none
+  - name: actionshield
+    allowed_actions: [read, compare, report]
+trials: 1
+seed: 42
+max_steps: 50
+timeout_seconds: 60

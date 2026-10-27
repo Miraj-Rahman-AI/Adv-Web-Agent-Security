@@ -1,0 +1,7 @@
+include LICENSE requirements.txt
+recursive-include configs *.yaml
+recursive-include docs *.md
+recursive-include examples *.py
+recursive-include tests *.py
+recursive-include webguardbench/data *.yaml
+recursive-include webguardbench/environments *.html

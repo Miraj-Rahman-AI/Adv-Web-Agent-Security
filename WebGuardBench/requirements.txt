@@ -1,0 +1,2 @@
+# Core CLI and in-memory experiments. See pyproject.toml for browser/dev extras.
+PyYAML>=6.0.2,<7

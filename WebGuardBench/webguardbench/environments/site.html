@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WebGuardBench controlled environment</title>
+<style>
+body { font: 16px system-ui; max-width: 900px; margin: 48px auto; padding: 0 24px;
+       color: #dce5f3; background: #111827; }
+h1 { color: #67e8f9; } .notice { color: #a7b8ce; }
+button { margin: 8px 8px 8px 0; padding: 12px; border: 1px solid #64748b;
+         border-radius: 6px; background: #24324a; color: white; cursor: pointer; }
+pre { background: #1e293b; padding: 20px; white-space: pre-wrap; border-radius: 8px; }
+</style>
+<h1>WebGuardBench</h1>
+<p class="notice">Local synthetic benchmark. Purchases, messages and deletions affect this
+in-memory fixture only. No real accounts or transactions are connected.</p>
+<h2 id="heading">Loading environment…</h2>
+<div id="actions"></div>
+<pre id="state" aria-live="polite"></pre>
+<script>
+async function refresh() {
+  const state = await (await fetch('/api/state')).json();
+  document.querySelector('#heading').textContent = state.environment;
+  document.querySelector('#state').textContent = JSON.stringify(state, null, 2);
+  const container = document.querySelector('#actions');
+  if (!container.children.length) {
+    state.available_actions.forEach((action, index) => {
+      const button = document.createElement('button');
+      button.dataset.testid = 'action-' + index;
+      button.textContent = action.kind + (action.target ? ': ' + action.target : '');
+      button.onclick = async () => {
+        const response = await fetch('/api/action', {
+          method: 'POST', headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify(action)
+        });
+        const outcome = await response.json();
+        await refresh();
+        document.body.dataset.outcome = JSON.stringify(outcome);
+        document.body.dataset.sequence = String(Number(document.body.dataset.sequence || 0) + 1);
+      };
+      container.appendChild(button);
+    });
+  }
+}
+refresh();
+</script>
+</html>

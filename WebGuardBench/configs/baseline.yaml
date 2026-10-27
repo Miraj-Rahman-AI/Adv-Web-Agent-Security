@@ -1,0 +1,8 @@
+agent: scripted
+backend: memory
+defenses:
+  - name: none
+trials: 1
+seed: 42
+max_steps: 50
+timeout_seconds: 60

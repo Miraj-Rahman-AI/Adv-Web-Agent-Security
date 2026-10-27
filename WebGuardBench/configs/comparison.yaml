@@ -1,0 +1,10 @@
+agent: scripted
+backend: memory
+defenses:
+  - name: none
+  - name: allowlist
+    allowed_actions: [read, compare, report]
+trials: 2
+seed: 42
+max_steps: 50
+timeout_seconds: 60

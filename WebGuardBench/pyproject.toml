@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "webguardbench"
+version = "0.1.0"
+description = "Reproducible, action-level security evaluation for web agents"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
+dependencies = ["PyYAML>=6.0.2,<7"]
+
+[project.optional-dependencies]
+browser = ["playwright>=1.45,<2"]
+dev = ["pytest>=8,<10", "ruff>=0.9,<1", "build>=1.2,<2"]
+
+[project.scripts]
+webguardbench = "webguardbench.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["webguardbench*"]
+
+[tool.setuptools.package-data]
+webguardbench = ["data/scenarios/*.yaml", "environments/*.html"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["browser: requires Playwright and Chromium"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
