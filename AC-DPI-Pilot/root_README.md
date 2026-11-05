@@ -48,4 +48,15 @@ task_preserving_attack_success = (
     and attack_target_executed
 )
 
+```
 
+## Directory Structure
+
+```text
+results/
+│
+├── summaries/
+│
+├── raw/
+│
+└── README.md
