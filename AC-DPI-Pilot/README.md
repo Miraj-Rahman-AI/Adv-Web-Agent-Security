@@ -1368,14 +1368,10 @@ This is the primary attack evaluation condition.
 The rate is calculated as:
 
 $$
-\mathrm{TargetExecutionRate}
-=
-\frac{
-N_{\mathrm{target\ executed}}
-}{
-N_{\mathrm{valid\ attack\ trials}}
-}
-\times 100
+\mathrm{TargetExecutionRate} =
+\frac{N_{\text{target executed}}}
+{N_{\text{valid attack trials}}}
+\times 100\%
 $$
 
 Where:
