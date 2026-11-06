@@ -1392,14 +1392,10 @@ A higher value indicates that the targeted action was successfully executed in a
 **Definition:** Measures the proportion of attack trials in which both the legitimate task and the attack objective are successfully completed.
 
 $$
-\mathrm{TPASR}
-=
-\frac{
-N_{\mathrm{task\ preserving\ successes}}
-}{
-N_{\mathrm{valid\ attack\ trials}}
-}
-\times 100
+\mathrm{TPASR} =
+\frac{N_{\text{task-preserving attack successes}}}
+{N_{\text{valid attack trials}}}
+\times 100\%
 $$
 
 A successful trial must satisfy both:
