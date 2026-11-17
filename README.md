@@ -70,7 +70,7 @@ The projects share a common research direction while remaining independently org
 
 > **New Research Project:** [AC-DPI-Pilot](./AC-DPI-Pilot/) investigates whether Direct Prompt Injection can manipulate an LLM-based Web Agent into executing targeted unauthorized actions while preserving successful completion of its legitimate user task.
 
----
+
 
 ## Table of Contents
 
@@ -104,7 +104,7 @@ The projects share a common research direction while remaining independently org
 - [License](#license)
 - [Vision](#vision)
 
----
+
 
 # Research Motivation
 
@@ -172,7 +172,7 @@ This problem motivates the newly added **AC-DPI-Pilot** project.
 
 The example illustrates that task-completion success and authorization correctness must be evaluated independently.
 
----
+
 
 # Core Security Principles
 
@@ -192,7 +192,7 @@ These principles guide the development of the individual projects.
 
 No single security mechanism is assumed to provide complete protection against every form of prompt injection or unauthorized agent behavior.
 
----
+
 
 # Project Collection
 
@@ -239,7 +239,6 @@ Investigate whether runtime action enforcement reduces unauthorized actions whil
 
 **Research Category:** Runtime Defense and Action Authorization.
 
----
 
 ## 2. WebGuardBench
 
@@ -282,7 +281,7 @@ A benchmark should explicitly define its task distribution, threat model, succes
 
 **Research Category:** Security Benchmarking and Evaluation.
 
----
+
 
 ## 3. GoalGuard
 
@@ -322,7 +321,7 @@ Investigate whether goal-conditioned verification can identify unauthorized acti
 
 **Research Category:** Goal Verification and Agent Alignment.
 
----
+
 
 ## 4. LeakGuard
 
@@ -360,7 +359,7 @@ Investigate whether data-flow controls reduce unauthorized disclosure without un
 
 **Research Category:** Privacy and Data Protection.
 
----
+
 
 ## 5. SafeClick
 
@@ -396,7 +395,7 @@ Investigate how risk-aware approval mechanisms reduce unauthorized actions while
 
 **Research Category:** Human-in-the-Loop Security.
 
----
+
 
 ## 6. MemoryShield
 
@@ -434,7 +433,7 @@ Investigate whether provenance-aware memory controls reduce persistent prompt-in
 
 **Research Category:** Persistent Memory Security.
 
----
+
 
 ## 7. RedBlue Lab
 
@@ -472,7 +471,7 @@ All experiments should use authorized, controlled environments.
 
 **Research Category:** Adversarial Evaluation and Security Testing.
 
----
+
 
 ## 8. WebPermit
 
@@ -508,7 +507,7 @@ Investigate how least-privilege controls limit the impact of prompt injection, i
 
 **Research Category:** Access Control and Least-Privilege Security.
 
----
+
 
 ## 9. AgentSentinel
 
@@ -547,7 +546,7 @@ Detection quality should be evaluated against labeled benign and adversarial tra
 
 **Research Category:** Runtime Security Monitoring.
 
----
+
 
 ## 10. AgentFirewall
 
@@ -588,7 +587,6 @@ AgentFirewall should not assume that every direct user instruction is malicious.
 
 **Research Category:** Prompt-Injection Detection and Instruction Integrity.
 
----
 
 ## 11. AC-DPI-Pilot
 
@@ -772,7 +770,7 @@ Further research is needed to establish generalization across:
 
 **Research Category:** Attack Research, Authorization Evaluation, and Agent Security.
 
----
+
 
 # Overall Architecture
 
@@ -882,7 +880,7 @@ The overall architecture follows these principles:
 6. **Attack-Aware Evaluation:** Security mechanisms should be evaluated against realistic and clearly defined attack objectives.
 7. **Task-Preserving Security Evaluation:** Legitimate task success and authorization violations should be measured separately.
 
----
+
 
 # Research Questions
 
@@ -919,7 +917,7 @@ The newly added AC-DPI-Pilot project specifically investigates:
 
 Individual research papers should focus on a well-defined problem, an explicit threat model, a defensible research gap, and experimentally supported contributions.
 
----
+
 
 # Threat Model
 
@@ -997,7 +995,7 @@ The repository does not claim universal protection against:
 
 Likewise, successful attacks observed in synthetic environments do not establish the same outcomes in every real-world Web Agent.
 
----
+
 
 # Evaluation Framework
 
@@ -1078,7 +1076,7 @@ Results should include appropriate sample counts, uncertainty estimates, and lim
 
 No performance improvement should be claimed until the corresponding experiments have been completed and validated.
 
----
+
 
 # Technology Stack
 
@@ -1108,7 +1106,7 @@ AC-DPI-Pilot primarily uses Python, Ollama, structured JSON tool calls, and synt
 
 Project-specific dependencies and supported versions should be documented in each project's README.
 
----
+
 
 # Repository Structure
 
@@ -1191,7 +1189,7 @@ The new project separates implementation and research artifacts into the followi
 
 See [AC-DPI-Pilot](./AC-DPI-Pilot/) for detailed documentation.
 
----
+
 
 # Getting Started
 
@@ -1311,7 +1309,7 @@ These dependencies should be installed only when required by the selected projec
 
 Do not assume every project uses the same requirements or execution commands.
 
----
+
 
 # Development Roadmap
 
@@ -1406,7 +1404,7 @@ Progress should be tracked independently for each project.
 
 Features should be marked complete only after implementation and appropriate validation.
 
----
+
 
 # Security and Responsible Use
 
@@ -1461,7 +1459,7 @@ The effectiveness of a security mechanism depends on:
 
 The purpose of this repository is to support security research, understanding, and improvement of autonomous Web Agents.
 
----
+
 
 # Reproducibility
 
@@ -1515,7 +1513,7 @@ A successful attack in one trial does not establish reliable attack success.
 
 Likewise, a defense performing well under one configuration does not establish general protection across all agents or environments.
 
----
+
 
 # Contributing
 
@@ -1548,7 +1546,7 @@ Before contributing a new project or substantial feature, document:
 
 Contributions should follow the repository's coding, testing, and documentation practices as they are introduced.
 
----
+
 
 # Research and Publications
 
@@ -1598,7 +1596,7 @@ Publications, technical reports, and validated implementations will be linked he
 
 Research novelty should be established through a review of relevant prior work and supported by experimental evidence.
 
----
+
 
 # License
 
@@ -1610,7 +1608,7 @@ The MIT License permits use, modification, distribution, and commercial use, sub
 
 Individual third-party models, libraries, datasets, and other components remain subject to their respective licenses.
 
----
+
 
 # Vision
 
