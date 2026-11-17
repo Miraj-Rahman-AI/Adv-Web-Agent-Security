@@ -23,6 +23,9 @@
 </p>
 
 ---
+> [!CAUTION] 
+> $\color{red}{\textsf{\textbf{⚠ Warning: Harmful or offensive content may be present for research and educational purposes only.}}}$
+---
 
 ## Overview
 
