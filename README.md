@@ -1644,12 +1644,4 @@ Together, these projects provide a foundation for continued software development
 
   <br/><br/>
 
-  <a href="https://github.com/Miraj-Rahman-AI/Adv-Web-Agent-Security">
-    GitHub Repository
-  </a>
-
-  <br/><br/>
-
-  <b>11 Research & Engineering Projects | MIT License</b>
-
 </p>
