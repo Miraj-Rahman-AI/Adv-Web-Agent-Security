@@ -1634,14 +1634,9 @@ Together, these projects provide a foundation for continued software development
 
 ---
 
+
 <p align="center">
-
-  <b>Advanced Web Agent Security</b>
-
-  <br/>
-
-  <i>Research and Engineering for Trustworthy LLM-Based Web Agents</i>
-
-  <br/><br/>
-
+  <strong>Advanced Web Agent Security</strong><br>
+  <em>Research and Engineering for Trustworthy LLM-Based Web Agents</em>
 </p>
+
