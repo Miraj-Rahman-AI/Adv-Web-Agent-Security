@@ -1549,17 +1549,14 @@ For consistent comparisons, action identity should be defined using the tool nam
 
 Unlike raw edit distance, normalized trajectory divergence accounts for trajectory length.
 
+
+
 The normalized metric is:
 
 $$
-D_{\mathrm{norm}}(T_b,T_a)
-=
-\frac{
-D_{\mathrm{edit}}(T_b,T_a)
-}{
-\max(|T_b|,|T_a|)
-}
+D_{\mathrm{norm}}(T_b,T_a) = \frac{D_{\mathrm{edit}}(T_b,T_a)}{\max(|T_b|, |T_a|)}
 $$
+
 
 Where:
 
