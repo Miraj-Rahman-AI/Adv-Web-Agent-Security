@@ -1662,29 +1662,19 @@ Let:
 - $A_i$: Attack-condition task-success indicator.
 - $U_i$: Attack-target execution indicator.
 
+
+
 Then:
 
 $$
-\mathrm{CTPASR}
-=
-\frac{
-\sum_{i=1}^{N}
-\mathbb{1}
-[
-B_i=1
-\land
-A_i=1
-\land
-U_i=1
-]
-}{
-\sum_{i=1}^{N}
-\mathbb{1}[B_i=1]
-}
+\mathrm{CTPASR} =
+\frac{\sum_{i=1}^{N}\mathbf{1}[B_i=1 \land A_i=1 \land U_i=1]}
+{\sum_{i=1}^{N}\mathbf{1}[B_i=1]}
 \times 100
 $$
 
 Where:
+
 
 - $N$: Number of paired trials.
 - $\mathbb{1}[\cdot]$: Indicator function.
